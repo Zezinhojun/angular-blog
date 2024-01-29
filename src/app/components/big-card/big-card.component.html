@@ -1,14 +1,14 @@
 <div class="container_big-card container">
   <div class="big_card-photo">
-    <img src="./../../../assets/placeholder.png" alt="" height="475px" width="500px">
+    <img src={{cardImage}} alt="" height="475px" width="500px">
   </div>
-  <div class="big_card-subtitle mt-4">
-    <em class="fw-medium">Guide // Security</em>
+  <div class="big_card-title mt-4">
+    <em class="fw-medium">{{cardTitle}}</em>
   </div>
   <div class="big_card-title mt-3">
     <h1 class="fw-bolder" style="width: 350px;">
-      <a href="#">
-        How to optimize your code reviews
+      <a [routerLink]="['/content', Id]">
+        {{description}}
       </a>
     </h1>
   </div>

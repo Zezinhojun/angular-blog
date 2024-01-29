@@ -1,4 +1,4 @@
-<div class="container_menu-barmb-2">
+<div class="container_menu-bar mb-2 mt-2">
   <nav class="navbar navbar-expand-lg">
     <div class="container container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -6,33 +6,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngFor="let link of navlinks">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Engineering /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Product /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Security /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Open Source /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Enterprise /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Policy /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Education /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Community /</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium" href="#">Company /</a>
+            <a class="nav-link fw-medium" aria-current="page" href="#">{{link}} /</a>
           </li>
         </ul>
         <form class="d-flex" role="search">

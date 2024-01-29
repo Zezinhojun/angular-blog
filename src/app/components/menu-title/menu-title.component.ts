@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './menu-title.component.css'
 })
 export class MenuTitleComponent {
+  menuTitle: string = "Octonews"
 
 }
